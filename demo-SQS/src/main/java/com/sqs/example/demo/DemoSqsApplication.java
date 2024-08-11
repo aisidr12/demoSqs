@@ -1,4 +1,4 @@
-package com.sqs.example.demo.SQS;
+package com.sqs.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
