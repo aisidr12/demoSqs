@@ -14,12 +14,11 @@ public class ListingActiveQueue {
         this.sqsClient = sqsClient;
     }
 
-    public void listarQueue(){
-        List<String> colas = sqsClient.listQueues().queueUrls();
-        colas.forEach(System.out::println);
+    public List<String> listQueueActives() {
+        try {
+            return sqsClient.listQueues().queueUrls();
+        } catch (Exception e) {
+            return List.of();
+        }
     }
-
-
-
-
 }
